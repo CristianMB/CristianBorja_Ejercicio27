@@ -9,7 +9,5 @@ cd /hpcfs/home/fisi4028/cm.borja10/CristianBorja_Ejercicio27/
 module load mpich/3.2.1
 
 make clean
-make Listing_122
-make Listing_123
-
-
+make L1
+make L2
