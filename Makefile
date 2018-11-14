@@ -1,17 +1,17 @@
-all: output1 output2
+all: L1 L2
 
-output1: listing2.x
-	mpirun -np 4 ./listing2.x
+L1: Listing_122.x
+	mpirun -np 4 ./Listing_122.x
 
-output2: listing3.x
-	mpirun -np 4 ./listing3.x
+L2: Listing_123.x
+	mpirun -np 4 ./Listing_123.x
 
-listing2.x: listing2.c
-	mpicc listing2.c -o listing2.x
+Listing_122.x: Listing_122.c
+	mpicc Listing_122.c -o Listing_122.x
 
-listing3.x: listing3.c
-	mpicc listing3.c -o listing3.x
+Listing_123.x: Listing_123.c
+	mpicc Listing_123.c -o Listing_123.x
 
 clean:
-	rm -f output1
-	rm -f output2
+	rm -f L1
+	rm -f L2
